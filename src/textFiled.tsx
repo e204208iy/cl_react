@@ -21,7 +21,7 @@ export default function TextFiled() {
         return res.json();
     };
     const AverageFetcher = async () => {
-        const res = await fetch("//climage-3jsp3rf3ra-an.a.run.app/average/");
+        const res = await fetch("https://climage-3jsp3rf3ra-an.a.run.app/average/");
         return res.json();
     };
     //useQuery
