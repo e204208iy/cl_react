@@ -68,6 +68,13 @@ export default function MainTable(props:any) {
     datasets: [
       {
         type: "line" as any,
+        label: "順2級合格ライン",
+        data: [50,50,50,50,50,50,50,50,50,50,50,50,50,50,50],
+        borderColor: 'rgb(154,205,50)',
+        backgroundColor: 'rgba(154,205,50, 0.5)',
+      },
+      {
+        type: "line" as any,
         label: "全体の平均",
         data: [50,52,55,58,60,62,63,64,66],
         borderColor: 'rgb(255, 99, 132)',
