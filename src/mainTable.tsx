@@ -68,7 +68,7 @@ export default function MainTable(props:any) {
     datasets: [
       {
         type: "line" as any,
-        label: "順2級合格ライン",
+        label: "準2級合格ライン",
         data: [50,50,50,50,50,50,50,50,50,50,50,50,50,50,50],
         borderColor: 'rgb(154,205,50)',
         backgroundColor: 'rgba(154,205,50, 0.5)',

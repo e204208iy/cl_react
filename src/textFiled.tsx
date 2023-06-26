@@ -37,6 +37,7 @@ export default function TextFiled() {
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) =>{
         if(e.key === "Enter"){
             console.log("Entered")
+            console.log(studentNumber.current)
             refetch()
         }
     }
@@ -52,7 +53,7 @@ export default function TextFiled() {
             onKeyDown={handleKeyDown} 
             />
             </Box>
-            <MainTable {...studentData} {...averageData}/>
+            <MainTable {...studentData} {...averageData} />
         </Container>
     )
 }

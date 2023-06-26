@@ -9,7 +9,7 @@ export default function ButtonAppBar() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          コンピューターリテラシー  成績参照
+          コンピューターリテラシー  成績
           </Typography>
         </Toolbar>
       </AppBar>
