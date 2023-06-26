@@ -10,7 +10,7 @@ export default function ButtonAppBar() {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          AI応用研究所  成績参照サイト
+          コンピューターリテラシ  成績参照
           </Typography>
         </Toolbar>
       </AppBar>
