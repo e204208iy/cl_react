@@ -33,7 +33,7 @@ export const options = {
     },
     title: {
       display: true,
-      text: 'コンピュータリテラシー成績',
+      text: 'タイピング練習 小テスト',
     },
   },
   scales: {
