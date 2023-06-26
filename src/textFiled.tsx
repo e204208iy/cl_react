@@ -16,6 +16,8 @@ export default function TextFiled() {
 
     const studentNumber = useRef("") ;
 
+    let studentNum = {"num":studentNumber.current}
+    
     const StudentFetcher = async () => {
         const res = await fetch("https://climage-3jsp3rf3ra-an.a.run.app/students/"+studentNumber.current);
         return res.json();
@@ -37,7 +39,7 @@ export default function TextFiled() {
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) =>{
         if(e.key === "Enter"){
             console.log("Entered")
-            console.log(studentNumber.current)
+            console.log(typeof studentNumber.current)
             refetch()
         }
     }
@@ -53,7 +55,7 @@ export default function TextFiled() {
             onKeyDown={handleKeyDown} 
             />
             </Box>
-            <MainTable {...studentData} {...averageData} />
+            <MainTable {...studentData} {...averageData} {...studentNum}/>
         </Container>
     )
 }

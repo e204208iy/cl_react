@@ -82,7 +82,7 @@ export default function MainTable(props:any) {
       },
       {
           type: "bar" as any,
-          label: props.id + "さんの成績",
+          label: props.num + "さんの成績",
           data: score,
           borderColor: 'rgb(53, 162, 235)',
           backgroundColor: 'rgba(53, 162, 235, 0.5)',
