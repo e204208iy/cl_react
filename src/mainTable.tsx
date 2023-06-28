@@ -76,7 +76,7 @@ export default function MainTable(props:any) {
       {
         type: "line" as any,
         label: "全体の平均",
-        data: [50,52,55,58,60,62,63,64,66],
+        data: [33,39,54,34,37,40,41,39,37],
         borderColor: 'rgb(255, 99, 132)',
         backgroundColor: 'rgba(255, 99, 132, 0.5)',
       },
