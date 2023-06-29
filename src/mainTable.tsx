@@ -50,16 +50,16 @@ const labels = ['第1回', '第2回', '第3回', '第4回', '第5回', '第6回'
 export default function MainTable(props:any) {
   //安全ではないがlet:anyを使う　:　理由 :　fetchされたデータがundefindの場合Object.values(props.average)が動作しない
   //そのため、undefindを回避するためのコードを以下に記載
-  console.log(props)
+  // console.log(props)
   let average:any =[]
   let score:any =[]
   if(props.score == undefined){
-    console.log("undifinedです")
+    // console.log("undifinedです")
   }else{
     score = Object.values(props.score)
   }
   if(props.average == undefined){
-    console.log("undifinedです")
+    // console.log("undifinedです")
   }else{
     average = Object.values(props.average)
   }

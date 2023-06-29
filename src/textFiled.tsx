@@ -22,17 +22,19 @@ export default function TextFiled() {
         const res = await fetch("https://climage-3jsp3rf3ra-an.a.run.app/students/"+studentNumber.current);
         return res.json();
     };
-    const AverageFetcher = async () => {
-        const res = await fetch("https://climage-3jsp3rf3ra-an.a.run.app/average/");
-        return res.json();
-    };
+    //Mixed Content エラー
+    // const AverageFetcher = async () => {
+    //     const res = await fetch("https://climage-3jsp3rf3ra-an.a.run.app/average/");
+    //     return res.json();
+    // };
     //useQuery
     const [enabled, setEnabled] = useState(false);
 
     const {data: studentData,refetch} = useQuery(['student'], StudentFetcher,{
         enabled: enabled
     });
-    const { data: averageData } = useQuery(["average"],AverageFetcher)
+    //Mixed Content エラー
+    // const { data: averageData } = useQuery(["average"],AverageFetcher)
     function handleChange(e:React.ChangeEvent<HTMLInputElement>){
         studentNumber.current = e.target.value
     }
@@ -43,6 +45,8 @@ export default function TextFiled() {
             refetch()
         }
     }
+    //Mixed Content エラー　62行目の元コード
+    //  <MainTable {...studentData} {...averageData} {...studentNum}/>
     return (
         <Container maxWidth="md">
             <Box>
@@ -55,7 +59,7 @@ export default function TextFiled() {
             onKeyDown={handleKeyDown} 
             />
             </Box>
-            <MainTable {...studentData} {...averageData} {...studentNum}/>
+            <MainTable {...studentData} {...studentNum}/>
         </Container>
     )
 }
